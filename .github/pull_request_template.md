@@ -1,16 +1,11 @@
 ## Description
-<!-- What does this PR do? -->
+<!-- What infrastructure changes does this PR introduce? -->
 
-## Type of Change
-- [ ] New infrastructure
-- [ ] Infrastructure modification
-- [ ] Bug fix
-- [ ] Documentation
-
-## Terraform Plan Output
+## Terraform Plan,
+<!-- Paste `terraform plan` output -->
 
 ## Checklist
-- [ ] `terraform fmt` passed
-- [ ] `terraform validate` passed
-- [ ] No sensitive values in code
-- [ ] Variables documented
+- [ ] terraform fmt passed
+- [ ] terraform validate passed
+- [ ] No secrets in code
+- [ ] Cost impact reviewed
