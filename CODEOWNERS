@@ -1,0 +1,6 @@
+# Infrastructure team owns everything
+* sailakshmi-2312/infra-team
+
+# Security review for IAM changes
+modules/*/iam*.tf sailakshmi-2312/security-team
+bootstrap/ sailakshmi-2312/security-team
