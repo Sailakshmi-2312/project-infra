@@ -43,7 +43,7 @@ jobs:
         id: init
         run: |
           cd bootstrap
-          terraform init 
+          terraform init -upgrade
 
       - name: Terraform Validate Check
         id: validate
