@@ -39,6 +39,12 @@ jobs:
         run: terraform fmt -check -recursive
         continue-on-error: true
       
+      - name: Clean Terraform
+        run: |
+          rm -rf .terraform
+          rm -f terraform.lock.hcl
+
+      
       - name : Terraform init 
         id: init
         run: |
