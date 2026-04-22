@@ -1,2 +1,13 @@
-# VPC Module
-# This will be implemented in Story 3.1
+terraform {
+    required_version = ">=1.6.1"
+  required_providers {
+    aws ={
+        source = "hashicorp/aws"
+        version = "~> 5.0"
+    }
+  }
+}
+
+locals {
+  name= "${var.project_name}-${var.environment}"
+}
