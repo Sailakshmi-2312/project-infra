@@ -29,7 +29,7 @@ variable "public_subnets" {
 variable "private_subnets" {
   description = "CIDR blocks for private subnets"
   type = list(string)
-  default = [ "10.0.10.0/24","10.0.10.0/24" ]
+  default = [ "10.0.10.0/24","10.0.20.0/24" ]
 }
 
 variable "single_nat_gateway" {
@@ -50,3 +50,20 @@ variable "tags" {
   default     = {}
 }
 
+variable "enable_ecr_endpoints" {
+  description = "Enable ECR VPC endpoints"
+  type        = bool
+  default     = false  # ~$15/month - enable for prod
+}
+
+variable "enable_log_endpoints" {
+  description = "Enable log VPC endpoints"
+  type        = bool
+  default     = false  # ~$15/month - enable for prod
+}
+
+variable "enable_sts_endpoints" {
+  description = "Enable sts VPC endpoints"
+  type        = bool
+  default     = false  # ~$15/month - enable for prod
+}
