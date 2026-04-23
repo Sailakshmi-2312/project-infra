@@ -143,5 +143,5 @@ resource "aws_iam_role_policy" "github_action_terraform" {
 # Output the role ARN for GitHub Actions
 output "github_actions_role_arn" {
   description = "ARN of IAM role for GitHub Actions"
-  value       =  aws_iam_role.github_action_terraform.arn
+  value       = aws_iam_role.github_action_terraform.arn
 }
